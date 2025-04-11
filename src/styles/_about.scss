@@ -1,0 +1,51 @@
+.about {
+  padding-top: 50px;
+  width: 1100px;
+
+  @media (max-width: $xl) {
+    padding-top: 80px;
+  }
+
+  @media (max-width: $lg) {
+    padding-top: 70px;
+  }
+
+  @media (max-width: $md) {
+    padding: 0;
+    width: 290px;
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0;
+    text-align: center;
+    gap: 25px;
+
+    @media (max-width: $xl) {
+      padding: 80px 90px;
+    }
+
+    @media (max-width: $lg) {
+      padding: 70px 80px;
+    }
+
+    @media (max-width: $md) {
+      padding: 50px 60px;
+      text-align: left;
+    }
+
+    @media (max-width: $sm) {
+      padding: 30px 5px;
+      text-align: left;
+      gap: 0px;
+
+    }
+  }
+
+  &__break {
+    @media (max-width: $md) {
+      display: none;
+    }
+  }
+}

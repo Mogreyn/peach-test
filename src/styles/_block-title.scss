@@ -1,0 +1,66 @@
+.block-title {
+  font-weight: 600;
+  color: $gray;
+  line-height: 1;
+  font-size: 56px;
+  margin-bottom: 50px;
+  margin-top: 0;
+
+  @media (max-width: $xl) {
+    margin-bottom: 45px;
+    font-size: 48px;
+  }
+
+  @media (max-width: $lg) {
+    font-size: 42px;
+    margin-bottom: 40px;
+  }
+
+  @media (max-width: $md) {
+    font-size: 36px;
+    margin-bottom: 35px;
+    text-align: left;
+  }
+
+  @media (max-width: $sm) {
+    font-size: 28px;
+    margin-bottom: 15px;
+    text-align: left;
+  }
+
+  &--hero {
+    margin-bottom: 60px;
+    max-width: 710px;
+
+    @media (max-width: $xl) {
+      margin-bottom: 50px;
+    }
+
+    @media (max-width: $lg) {
+      margin-bottom: 45px;
+    }
+
+    @media (max-width: $md) {
+      margin-bottom: 30px;
+      max-width: 610px;
+    }
+
+    @media (max-width: $sm) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &--white {
+    color: $white;
+
+    @media (max-width: $sm) {
+      margin-bottom: 10px;
+    }
+  }
+
+  &--centered {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+}

@@ -1,0 +1,121 @@
+.statistics {
+  padding-top: 100px;
+  display: none;
+
+  @media (max-width: $xl) {
+    padding-top: 80px;
+    display: block;
+  }
+
+  @media (max-width: $lg) {
+    padding-top: 70px;
+    display: block;
+  }
+
+  @media (max-width: $md) {
+    padding-top: 0;
+    display: block;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  &__item {
+    flex-basis: calc(100% / 3);
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+
+    @media (max-width: $xl) {
+      margin-bottom: 60px;
+    }
+
+    @media (max-width: $lg) {
+      margin-bottom: 40px;
+    }
+
+    @media (max-width: $md) {
+      margin-bottom: 28px;
+      flex-basis: auto;
+      min-width: calc(100% / 2);
+    }
+
+    &-wrapper {
+      display: flex;
+      flex-direction: column;
+
+      @media (max-width: $md) {
+        align-items: center;
+      }
+    }
+
+    &-count {
+      opacity: .95;
+      color: $red;
+      margin-bottom: 4px;
+      line-height: .8;
+      font-weight: 600;
+      font-size: 80px;
+      display: flex;
+      align-items: center;
+
+      @media (max-width: $xl) {
+        font-size: 60px;
+      }
+
+      @media (max-width: $lg) {
+        font-size: 48px;
+      }
+
+      @media (max-width: $md) {
+        font-size: 44px;
+      }
+
+      @media (max-width: $md) {
+        font-size: 40px;
+      }
+    }
+
+    &-symbol {
+      font-size: 64px;
+
+      @media (max-width: $xl) {
+        font-size: 54px;
+      }
+
+      @media (max-width: $lg) {
+        font-size: 46px;
+      }
+
+      @media (max-width: $md) {
+        font-size: 40px;
+      }
+
+      @media (max-width: $md) {
+        font-size: 30px;
+      }
+    }
+
+    &-description {
+      color: $gray;
+      line-height: 1.5;
+      font-size: 18px;
+
+      @media (max-width: $xl) {
+        font-size: 17px;
+      }
+
+      @media (max-width: $lg) {
+        font-size: 16px;
+      }
+
+      @media (max-width: $md) {
+        line-height: 1.2;
+        text-align: center;
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+.wrapper {
+  width: 100%;
+  max-width: 1250px;
+  margin: 0 auto;
+
+  @media (max-width: $md) {
+    max-width: 290px;
+  }
+
+  &--fullscreen-md {
+    @media (max-width: $md) {
+      max-width: 100%;
+    }
+  }
+}

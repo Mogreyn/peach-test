@@ -1,0 +1,23 @@
+@import '~normalize.css';
+@import "~bootstrap/scss/bootstrap";
+@import '@splidejs/splide/css';
+
+@import "base/fonts";
+@import "base/variables";
+@import "base/body";
+
+@import "wrapper";
+@import "block-title";
+@import "block-subtitle";
+@import "promo-text";
+@import "button";
+
+@import "header";
+@import "header-menu";
+@import "about";
+@import "statistics";
+@import "map";
+@import "mission";
+@import "routes";
+@import "benefits";
+@import "slider";

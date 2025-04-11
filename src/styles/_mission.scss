@@ -1,0 +1,64 @@
+.mission {
+  padding: 140px 0;
+  background-color: $red-bg;
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+
+  .promo-text {
+    padding: 0 30px;
+  }
+
+  @media (max-width: $xl) {
+    padding: 110px 0;
+  }
+
+  @media (max-width: $lg) {
+    padding: 80px 0;
+  }
+
+  @media (max-width: $md) {
+    padding: 50px 0;
+  }
+
+  @media (max-width: $sm) {
+    padding: 32px 0;
+  }
+
+  &__left,
+  &__right {
+    position: absolute;
+    z-index: -1;
+    height: 80%;
+
+    @media (max-width: $md) {
+      height: 82%;
+    }
+  }
+
+  &__left {
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+
+    @media (max-width: $md) {
+      left: -7%;
+    }
+  }
+
+  &__right {
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%) rotate(180deg);
+
+    @media (max-width: $md) {
+      right: -7%;
+    }
+  }
+
+  &__break {
+    @media (max-width: $xl) {
+      display: none;
+    }
+  }
+}

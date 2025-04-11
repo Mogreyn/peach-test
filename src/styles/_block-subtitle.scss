@@ -1,0 +1,45 @@
+.block-subtitle {
+  color: $gray;
+  margin-bottom: 4px;
+  text-align: center;
+  line-height: 1.2;
+  font-weight: 600;
+  font-size: 40px;
+  margin-top: 0;
+
+  @media (max-width: $xl) {
+    font-size: 36px;
+  }
+
+  @media (max-width: $lg) {
+    font-size: 30px;
+  }
+
+  @media (max-width: $md) {
+    font-size: 26px;
+  }
+
+  @media (max-width: $sm) {
+    font-size: 22px;
+  }
+
+  &--red {
+    color: $deep-red;
+  }
+
+  &--margin {
+    margin-bottom: 50px;
+
+    @media (max-width: $xl) {
+      margin-bottom: 40px;
+    }
+
+    @media (max-width: $lg) {
+      margin-bottom: 30px;
+    }
+
+    @media (max-width: $md) {
+      margin-bottom: 0;
+    }
+  }
+}
