@@ -6,7 +6,7 @@
   },
   "description": "Test task for Peach",
   "main": "index.js",
-  "private": true,
+  "homepage": "https://Mogreyn.github.io/peach-test/",
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack --mode development",
     "build": "cross-env NODE_ENV=production webpack --mode production",
