@@ -14,7 +14,6 @@
     padding: 0;
     width: 290px;
   }
-
   &__card {
     display: flex;
     flex-direction: column;
@@ -39,10 +38,8 @@
       padding: 30px 5px;
       text-align: left;
       gap: 0px;
-
     }
   }
-
   &__break {
     @media (max-width: $md) {
       display: none;
